@@ -9,8 +9,7 @@ function esPrimo(num) {
   }
 
   return true;
-}
-
+} 
 function obtenerPrimerosPrimos(cantidad) {
   const primerosPrimos = [];
   let num = 2;

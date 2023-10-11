@@ -9,7 +9,6 @@ while (num!=9999){
     num=Number(prompt("Introduce un numero"))
 }
 document.getElementById("salida").innerHTML="El total de los numeros introducidos es de "+total+"<br>"
-
 if (total==0)
     document.getElementById("salida").innerHTML=total+" es igual a 0"
 else 
