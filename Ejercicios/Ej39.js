@@ -24,6 +24,5 @@ function obtenerPrimerosPrimos(cantidad) {
 
   return primerosPrimos;
 }
-
 const primeros100Primos = obtenerPrimerosPrimos(100);
 document.getElementById("salida").innerHTML=primeros100Primos;
