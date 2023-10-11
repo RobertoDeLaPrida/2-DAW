@@ -21,3 +21,4 @@ function esPrimo(num) {
   
   console.log(numerosPrimosMenoresDe100);
   
+  document.getElementById("salida").innerHTML = "Números primos menores de 100: " + numerosPrimosMenoresDe100.join(", ");
