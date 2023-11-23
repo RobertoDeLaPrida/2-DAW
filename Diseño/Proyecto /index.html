@@ -9,12 +9,41 @@
 </head>
 <body>
     <div class="container">
-        <div id="foto" class="row">
-            <img src="./Resources/hero-bg.jpeg" id="fotito">
+        <nav id="offcanvas">
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+              </a>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <img src="./Resources/profile-img.jpeg" id="profile-off">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Alex Smith</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                  </div>
+                  <div class="row" id="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <div id="foto" class="row header">
             <div class="col-12" id="nombre">
-                <h1>Alex Smith</h1>
-                <p>I'm photografer</p>
+                <p><b>Alex Smith</b></p>
+                <p>I'm photographer</p>
             </div>
+        </div>
+        <div id="about" class="row">
+            <h2>About</h2>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
