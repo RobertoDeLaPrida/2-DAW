@@ -8,6 +8,9 @@ Color letra -> 272829
 Fondo testimonio -> F5F8FD
 Celeste comillas -> C3E8FA
 */
+body{
+    font-family: sans-serif;
+}
 nav{
     position: absolute;
     z-index: 10;
@@ -17,11 +20,7 @@ nav{
 #profile-off{
     width: 100px;
 }
-
-h1{
-    font-family: sans-serif;
-}
-#foto{
+#home{
     position: relative;
     display: flex;
     align-items: center;
@@ -32,8 +31,11 @@ h1{
     color: white;
     font-size: 35px;
 }
-
 .header {
     background-image: url("Resources/hero-bg.jpeg");
     background-position: center;
+}
+#about_title{
+    padding-top: 85px;
+    color: #1c3969;
 }
