@@ -10,6 +10,7 @@ Celeste comillas -> C3E8FA
 */
 body{
     font-family: sans-serif;
+    background-color: #ffffff;
 }
 body h2 {
     color: #1c3969;
@@ -67,7 +68,7 @@ nav{
     background-position: center;
 }
 #about_title{
-    padding-top: 85px;
+    padding-top: 75px;
 }
 
 #profile-main{
@@ -145,3 +146,56 @@ nav{
 .count-box{
     padding-left: 70px;
 }
+.progress{
+    margin: 5px;
+}
+#skills{
+    background-color: #f5f8fd;
+}
+#tecnology,
+#percentage {
+    display: inline-block;
+
+}
+#percentage{
+    float: right;
+}
+#resume{
+    padding-top: 180px;
+}
+#resume h5{
+    background-color: #e4edf9;
+    display: inline-block;
+    padding: 5px;
+}
+#portfolio{
+    padding-top: 170px;
+    background-color: #f5f8fd;
+}
+#filters{
+    list-style: none;
+}
+#filters li {
+    display: inline;
+    padding: 25px;
+}
+.portfolio-wrap{
+    padding: 20px;
+}
+
+.icon-box {
+    display: flex;
+  }
+  
+  .icon {
+    margin-right: 10px; /* Ajusta el espacio entre el icono y el título según tus preferencias */
+  }
+  
+  .title {
+    margin: 0; /* Elimina el margen por defecto del título para evitar espacios no deseados */
+  }
+  
+  .description {
+    margin-top: 5px; 
+  }
+  
