@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+</head>
+<body>
+    <div>
+        <h1>Cronometro</h1>
+    </div>
+    <div id="salida">
+        <span id="hora"></span>
+        <span id="min"></span>
+        <span id="sec"></span>
+        <span id="milisec"></span>
+    </div>
+    <div>
+        <button onclick="setInterval(iniciaCron,10)">Iniciar/Parar</button>
+        <button onclick="clearInterval()">Reiniciar</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

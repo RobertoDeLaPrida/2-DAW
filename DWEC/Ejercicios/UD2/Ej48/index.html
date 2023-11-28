@@ -1,0 +1,28 @@
+<!-- Preparar un documento HTML que contenga un formulario con dos entradas numéricas y cuatro botones,
+     cada uno de ellos representará las cuatro operaciones aritméticas básicas, suma, resta, multiplicación y división. 
+     Al pulsar cualquiera de ellos se generará automáticamente la información de salida resultante de aplicar 
+     la operación elegida a las entradas numéricas proporcionadas por el usuario. Esta información debe ser mostrada en una capa de salida bajo el formulario.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 48</title>
+</head>
+<body>
+    <div>
+        <form onsubmit="return false">
+            <input id="op1" type="number">
+            <button id="suma" onclick="sumar()">+</button>
+            <button id="resta" onclick="restar()">-</button>
+            <button id="multiplicación" onclick="multiplica()">*</button>
+            <button id="división" onclick="divide()">/</button>
+            <input id="op2" type="number">
+            
+        </form>
+    </div>
+    <div id="salida"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
