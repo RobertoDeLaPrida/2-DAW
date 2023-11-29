@@ -129,7 +129,7 @@ nav{
     fill: white; 
 }
 
-#list{
+.list{
     list-style: none;
 }
 #fact{
@@ -185,21 +185,50 @@ nav{
 
 .icon-box {
     display: flex;
-  }
+}
   
-  .icon {
+.icon {
     margin-right: 10px; /* Ajusta el espacio entre el icono y el título según tus preferencias */
-  }
+}
   
-  .title {
+.title {
     margin: 0; /* Elimina el margen por defecto del título para evitar espacios no deseados */
-  }
+}
   
-  .description {
+.description {
     margin-top: 5px; 
-  }
+}
   
-  .icon-box i {
+.icon-box i {
     background-color: #149ddd;
     color: #ffffff;
-  }
+}
+
+#testimonials{
+    background-color: #f5f8fd;
+}
+.card-body {
+    text-align: center;
+}
+.card-body img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.info, #form {
+    box-shadow: 0 0 40px -10px #636363 ;/* Agrega un box-shadow al div */
+    padding: 20px;
+}
+.info i{
+    background-color: #e0f3fd;
+    color: #149de2;
+}
+
+#footer{
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+    background-color: #040b14;
+    color: white;
+    position:absolute;
+}
