@@ -199,3 +199,7 @@ nav{
     margin-top: 5px; 
   }
   
+  .icon-box i {
+    background-color: #149ddd;
+    color: #ffffff;
+  }
