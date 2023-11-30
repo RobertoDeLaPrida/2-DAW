@@ -91,6 +91,10 @@ body h2 {
     justify-content: center;
     flex-direction: column;
 }
+#links {
+    margin: 0;
+    padding: 0;
+}
 #links a{
     text-decoration: none;
     color: #6f7180;
@@ -228,10 +232,16 @@ body h2 {
 }
 
 #footer{
-    margin-top: 150px;
+    
     text-align: center;
     width: 100%;
     background-color: #040b14;
     color: white;
     position:absolute;
+}
+#arrow-button{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 50;
 }
