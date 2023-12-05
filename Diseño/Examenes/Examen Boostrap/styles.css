@@ -1,0 +1,58 @@
+#inicio{
+    background-image: url(./imagenes/banner.jpg);
+    background-color: #e5536d;
+    padding-bottom: 50px;
+}
+#logo{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+#texto {
+    color:white;
+}
+#texto h2 {
+    font-size: 60px;
+}
+#form{
+    background-color: white;
+    padding-bottom: 30px;
+    margin-top: 150px;
+}
+#form .row{
+    border: 2px solid #ebebeb;
+}
+#form h2 {
+    color: #e5536d;
+    font-size: 36px;
+}
+#form input{
+    padding: 10px;
+    margin: 5px;
+}
+#form button {
+    background-color: #e5536d;
+    font-size: larger;
+    color: white;
+    margin-bottom: 15px;
+}
+.journeys{
+    padding-top: 70px;
+    background-color: #ebebeb;
+}
+.journey-content{
+    padding-top: 40px;
+}
+.foto{
+    background-color: white;
+}
+.borde{
+    border: 2px solid #ebebeb;
+}
+.title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text{
+    background-color: white;
+    padding: 30px;
+}
