@@ -1,0 +1,31 @@
+#ej1{
+    background-image: url(../imagenes/nubes.jpg);
+    animation: nubes 10s linear infinite;
+}
+@keyframes nubes {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 1700%;
+    }
+}
+
+#ironman{
+    animation: ironman 10s infinite;
+}
+
+@keyframes ironman {
+    25%{
+        transform: rotate(135deg);
+    }
+    50%{
+        transform: translate(50vw, 200px);
+    }
+    75%{
+        transform: rotate(0deg) translate(50vw,200px);
+    }
+    100%{
+        transform: scale(3) translateY(-500px);
+    }
+}
