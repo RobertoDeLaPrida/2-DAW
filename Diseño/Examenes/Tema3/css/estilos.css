@@ -1,0 +1,184 @@
+/* CSS predefinido para el ejercicio 1 */
+#feria24 {
+    border: black thin solid; 
+    background-image: url("../imagenes/caseta.png");
+    background-size: contain; 
+    height: 50vh;
+}
+
+#flamenca-dcha,  #flamenca-izq{
+    position:relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 45vh;
+    width: 35vw;
+    float: left;
+}
+
+#flamenca-dcha{
+    background-image: url("../imagenes/flamenca_derecha.png");
+}
+
+#flamenca-izq{
+    background-image: url("../imagenes/flamenca_izquierda.png");
+}
+  
+
+/* Respuesta del examen */
+
+iframe{
+    width: 700px;
+    height: 400px;
+}
+/* el atributo infinite hace que se repita indefinidamente ya que no se puede usar "loop" */
+#flamenca-dcha{
+    animation: bailecitodcha 40s infinite;
+}
+#flamenca-izq{
+    animation: bailecitoizq 40s infinite;
+}
+
+@keyframes bailecitodcha {
+0%{
+    transform: translate(0px,0px);
+}
+ 5%{
+    transform: translate(-50px);
+    /* Priemr paso hacia detrás */
+ }   
+ /* hacer el giro/gesto/baile/movimiento 3 veces y volver a estar "De pie" es decir con 0 grados de rotación ya que si no se vuelve a poner a 0 grados el siguiente "rotate(50deg)" no lo giraria ya que esta rotada 50 grados */
+ 10%{
+    transform: rotate(50deg);
+ }
+ 15%{
+    transform: rotate(0deg);
+ }
+20%{
+    transform: rotate(50deg);
+}
+25%{
+    transform: rotate(0deg);
+}
+30%{
+    transform: rotate(50deg);
+}
+35%{
+    transform: rotate(0deg);
+}
+/* Mover a la flamenca una vez para que cruzen y devolverla a su posicion */
+40%{
+    transform: translate(200px);
+}
+50%{
+    transform: translate(0px);
+}
+/* repetir los giros */
+55%{
+    transform: rotate(50deg);
+}
+60%{
+    transform: rotate(0deg);
+}
+65%{
+    transform: rotate(50deg);
+}
+70%{
+    transform: rotate(0deg);
+}
+/* repetir el cruze */
+75%{
+    transform: translate(200px);
+}
+80%{
+    transform: translate(0px);
+}
+85%{
+    transform: translate(200px);
+}
+90%{
+    transform: translate(0px);
+}
+95%{
+    transform: translate(200px);
+}
+98%{
+    transform: translate(0px);
+}
+/* Hacer el giro de 360 grados */
+99%{
+    transform: rotate(1turn);
+}
+100%{
+    transform: rotate(0deg);
+}
+}
+/* La flamenca (que esta mirando hacia la) izquierda repite los mismos movimientos solo que los valores estan invertidos, es decir si la flamenca de la derecha gira 50 grados la de la izquierda gira -50 grados*/
+@keyframes bailecitoizq {
+    0%{
+        transform: translate(0px,0px);
+    }
+     5%{
+        transform: translate(50px);
+     }   
+     10%{
+        transform: rotate(-50deg);
+     }
+     15%{
+        transform: rotate(0deg);
+     }
+    20%{
+        transform: rotate(-50deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(-50deg);
+    }
+    35%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: translate(-200px);
+    }
+    50%{
+        transform: translate(0px);
+    }
+    55%{
+        transform: rotate(-50deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    65%{
+        transform: rotate(-50deg);
+    }
+    70%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: translate(-200px);
+    }
+    80%{
+        transform: translate(0px);
+    }
+    85%{
+        transform: translate(-200px);
+    }
+    90%{
+        transform: translate(0px);
+    }
+    95%{
+        transform: translate(-200px);
+    }
+    98%{
+        transform: translate(0px);
+    }
+    99%{
+        transform: rotate(-1turn);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    }
+    
