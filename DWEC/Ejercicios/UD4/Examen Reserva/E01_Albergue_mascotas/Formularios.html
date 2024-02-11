@@ -1,0 +1,215 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Formularios</title>
+<!-- Enlaces a bootstrap-->
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css" />
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<style type="text/css">
+body {
+	margin-left: 10px;
+}
+
+form {
+	display: block;
+}
+</style>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form class="form-horizontal" name="frmAltaMascota"
+        id="frmAltaMascota">
+        <fieldset>
+            <!-- Form Name -->
+            <legend>Alta de mascota</legend>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="txtIdMascota">IdMascota</label>
+                <div class="col-xs-4">
+                    <input id="txtIdMascota" name="txtIdMascota"
+                        placeholder="IdMascota"
+                        class="form-control input-md" type="text">
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="txtPeso">Peso</label>
+                <div class="col-xs-4">
+                    <input id="txtPeso" name="txtPeso"
+                        placeholder="Peso" class="form-control input-md"
+                        type="text">
+                </div>
+            </div>
+            <!-- Multiple Radios -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label"
+                    for="rbtTipoMascota">Tipo mascota</label>
+                <div class="col-xs-4">
+                    <div class="radio">
+                        <input name="rbtTipoMascota"
+                            id="rbtTipoMascota-G" value="gato"
+                            checked="checked" type="radio"> 
+                        <label for="rbtTipoMascota-G">Gato</label>
+                    </div>
+                    <div class="radio">
+                        <input name="rbtTipoMascota"
+                            id="rbtTipoMascota-P" value="perro"
+                            type="radio"> 
+                        <label for="rbtTipoMascota-P">Perro </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="txtAltura">Altura
+                    perro</label>
+                <div class="col-xs-4">
+                    <input id="txtAltura" name="txtAltura"
+                        placeholder="Altura perro"
+                        class="form-control input-md" type="text">
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="txtRaza">Raza
+                    gato</label>
+                <div class="col-xs-4">
+                    <input id="txtRaza" name="txtRaza"
+                        placeholder="Raza gato"
+                        class="form-control input-md" type="text">
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label"
+                    for="btnAceptarAltaMascosta"></label>
+                <div class="col-xs-4">
+                    <button id="btnAceptarAltaMascosta"
+                        name="btnAceptarAltaMascosta"
+                        class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <form class="form-horizontal" name="frmAltaColaborador"
+        id="frmAltaColaborador">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Alta de colaborador</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="txtDNI">DNI</label>
+                <div class="col-xs-4">
+                    <input id="txtDNI" name="txtDNI" placeholder="DNI"
+                        class="form-control input-md" type="text">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="txtNombre">Nombre</label>
+                <div class="col-xs-4">
+                    <input id="txtNombre" name="txtNombre"
+                        placeholder="Nombre"
+                        class="form-control input-md" type="text">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="txtApellidos">Apellidos</label>
+                <div class="col-xs-4">
+                    <input id="txtApellidos" name="txtApellidos"
+                        placeholder="Apellidos"
+                        class="form-control input-md" type="text">
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label"
+                    for="btnAceptarAltaColaborador"></label>
+                <div class="col-xs-4">
+                    <input type="button" id="btnAceptarAltaColaborador"
+                        name="btnAceptarAltaColaborador"
+                        class="btn btn-primary" value="Aceptar" />
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <form class="form-horizontal" name="frmMovimientoMascota"
+        id="frmMovimientoMascota">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Movimiento de mascota</legend>
+            <!-- Multiple Radios -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label"
+                    for="rbtTipoMovimiento">Tipo movimiento</label>
+                <div class="col-xs-4">
+                    <div class="radio">
+                        <input name="rbtTipoMovimiento"
+                            id="rbtTipoMovimiento-E" value="E"
+                            checked="checked" type="radio"> 
+                        <label for="rbtTipoMovimiento-E">Entrega</label>
+                    </div>
+                    <div class="radio">
+                        <input name="rbtTipoMovimiento"
+                            id="rbtTipoMovimiento-R" value="R"
+                            type="radio"> 
+                        <label for="rbtTipoMovimiento-R">Recogida</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label"
+                    for="txtIdMascotaMovimiento">IdMascota</label>
+                <div class="col-xs-4">
+                    <input id="txtIdMascotaMovimiento"
+                        name="txtIdMascotaMovimiento"
+                        placeholder="IdMascota"
+                        class="form-control input-md" type="text">
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label"
+                    for="txtDNIMovimiento">DNI</label>
+                <div class="col-xs-4">
+                    <input id="txtDNIMovimiento" name="txtDNIMovimiento"
+                        placeholder="DNI" class="form-control input-md"
+                        type="text">
+
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label"
+                    for="btnAceptarMovimiento"></label>
+                <div class="col-xs-4">
+                    <input type="button" id="btnAceptarMovimiento"
+                        name="btnAceptarMovimiento"
+                        class="btn btn-primary" value="Aceptar" />
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

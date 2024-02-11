@@ -1,0 +1,15 @@
+﻿div {
+	text-align:center;
+}
+.boton{
+        font-size:10px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        border:0px;
+        width:180px;
+        height:30px;
+        vertical-align:middle;
+        text-align:center;
+}
