@@ -304,11 +304,13 @@ for (let i = 0; i < botonesTeclado.length; i++) {
           // Crear botones de modificar
           const botonAñadir = document.createElement("button");
           botonAñadir.textContent = "+";
+          botonAñadir.className = "modificador"
           botonAñadir.addEventListener("click", añadirUnidades);
           modificarCell.appendChild(botonAñadir);
 
           const botonRestar = document.createElement("button");
           botonRestar.textContent = "-";
+          botonRestar.className = "modificador"
           botonRestar.addEventListener("click", restarUnidades);
           modificarCell.appendChild(botonRestar);
 
@@ -448,4 +450,6 @@ function borrarTr(){
 // Función para finalizar el pedido
 function finalizarPedido() {
     console.log("Se ha pulsado el botón de finalizar pedido");
+    const div = document.getElementById("pedido");
+    div.innerHTML=""
 }

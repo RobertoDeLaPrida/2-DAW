@@ -7,6 +7,7 @@ import Ej1 from './Ejericios/Ej1'
 import Ej2 from './Ejericios/Ej2';
 import Ej3 from './Ejericios/Ej3';
 import Ej4 from './Ejericios/Ej4';
+import Ej5 from './Ejericios/Ej5';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <Ej2 />
     <Ej3 />
     <Ej4 />
+    <Ej5 />
     <App />
   </React.StrictMode>
 );
