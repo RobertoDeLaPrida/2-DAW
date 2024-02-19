@@ -5,9 +5,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #131313;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav{
+  text-align: center;
+  padding: 30px;
+  color: white;
+  background-color: #202020;
+}
+
+img{
+  width: 250px;
+}
+
+.input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: white; /* Cambia el color del borde */
+}
+
+.input .MuiInputLabel-outlined {
+  color: white !important; /* Cambia el color del texto */
+}
+
+.input .MuiInputBase-input {
+  color: white; /* Cambia el color del texto */
+}
+
+.textField{
+  padding-bottom: 10px;
+}
+
+.button .MuiButton-outlined {
+  color: white; /* Cambia el color del texto */
+  border-color: white; /* Cambia el color del borde */
+}
+
+.button .MuiButton-label {
+  color: white; /* Cambia el color del texto */
+}
+
+.buscadores{
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.buscadorPersonaje, .buscadorComic {
+  flex: 1;
+  border-radius: 10px;
+  background-color: #202020;
+  margin: 20px;
+  padding: 20px;
+}
+
+.limpiar{
+  text-align: center;
+}
+
+#salida{
+  background-color: #202020;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  margin: 20px;
 }
