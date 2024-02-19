@@ -25,15 +25,15 @@ img{
 }
 
 .input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
-  border-color: white; /* Cambia el color del borde */
+  border-color: white; 
 }
 
 .input .MuiInputLabel-outlined {
-  color: white !important; /* Cambia el color del texto */
+  color: white !important; 
 }
 
 .input .MuiInputBase-input {
-  color: white; /* Cambia el color del texto */
+  color: white;
 }
 
 .textField{
@@ -41,12 +41,12 @@ img{
 }
 
 .button .MuiButton-outlined {
-  color: white; /* Cambia el color del texto */
-  border-color: white; /* Cambia el color del borde */
+  color: white; 
+  border-color: white; 
 }
 
 .button .MuiButton-label {
-  color: white; /* Cambia el color del texto */
+  color: white;
 }
 
 .buscadores{
@@ -73,4 +73,18 @@ img{
   color: white;
   padding: 20px;
   margin: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cada fila contendrá 4 elementos */
+  gap: 10px;
+}
+
+.personaje{
+  background-color: #404040;
+  border-radius: 10px;
+  box-shadow: 90px;
+}
+
+.fotoPersonaje{
+  padding-top: 30px;
 }
