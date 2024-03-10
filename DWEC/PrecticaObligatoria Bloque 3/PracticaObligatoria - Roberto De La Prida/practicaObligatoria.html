@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/practicaObligatoria.css" />
+  <title>Práctica Obligatoria</title>
+</head>
+
+<body>
+  <h1>Gestor Comercial</h1>
+  <div id="clientes" class="panel">
+    <h1>Clientes</h1>
+    <form id="frmComercial" name="frmComercial">
+      <label>
+        <h4>Comercial:</h4>
+      </label>
+      <select name="comerciales"></select>
+    </form>
+  </div>
+  <div id="controles" class="panel">
+    <h1>Controles</h1>
+    <form id="frmControles" name="frmControles">
+      <label>
+        <h4>Categoría:</h4>
+      </label>
+      <select name="categorias"></select><br />
+      <label>
+        <h4>Productos:</h4>
+      </label>
+      <select name="productos"></select><br />
+    </form>
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+    <button id="btnGestionCategorias" class="tecla" value="categorias">Gestión Categorías</button>
+    <button id="btnGestionProductos" class="tecla" value="productos">Gestión Productos</button>
+    <button id="btnGestionComerciales" class="tecla" value="comerciales">Gestión Comerciales</button>
+    <button id="btnGestionClientes" class="tecla" value="clientes">Gestión Clientes</button>
+  </div>
+  <div id="formularios" class="panel">
+    <h1>CRUD</h1>
+    <hr />
+    <div id="divCRUDCategorias">
+      <form id="frmNuevaCategoria" name="frmNuevaCategoria" style="visibility: visible">
+        <label>
+          <h4>Nueva categoría:</h4>
+        </label>
+        <input type="text" id="txtNuevaCategoria" /><br /><br />
+        <input type="submit" value="Guardar" />
+      </form>
+      <hr />
+      <form id="frmBorrarCategoria" name="frmBorrarCategoria" style="visibility: visible">
+        <label>
+          <h4>Categoría a borrar:</h4>
+        </label>
+        <input type="text" id="txtBorrarCategoria" /><br /><br />
+        <input type="submit" value="Borrar" />
+      </form>
+      <hr>
+      <form id="frmEditarCategoria">
+        <label>
+          <h4>Categoría a editar:</h4>
+        </label>
+        <label for="txtNombreAntiguoCategoria">Nombre Actual: </label><input type="text"
+          id="txtNombreAntiguoCategoria" /><br /><br />
+        <label for="txtNombreNuevoCategoria">Nombre Nuevo: </label><input type="text"
+          id="txtNombreNuevoCategoria" /><br /><br />
+        <input type="submit" value="Editar" />
+      </form>
+    </div>
+    <div id="divCRUDComerciales">
+      <form id="frmNuevoComercial" name="frmNuevoComercial" style="visibility: visible">
+        <label>
+          <h4>Nuevo comercial:</h4>
+        </label>
+        <input type="text" id="txtNuevoComercial" /><br /><br />
+        <input type="submit" value="Guardar" />
+      </form>
+      <hr />
+      <form id="frmBorrarComercial" name="frmBorrarComercial" style="visibility: visible">
+        <label>
+          <h4>Comercial a borrar:</h4>
+        </label>
+        <input type="text" id="txtBorrarComercial" /><br /><br />
+        <input type="submit" value="Borrar" />
+      </form>
+      <hr>
+      <form id="frmEditarComercial">
+        <label>
+          <h4>Comercial a editar:</h4>
+        </label>
+        <label for="txtNombreAntiguoComercial">Nombre Actual: </label><input type="text"
+          id="txtNombreAntiguoComercial" /><br /><br />
+        <label for="txtNombreNuevoComercial">Nombre Nuevo: </label><input type="text"
+          id="txtNombreNuevoComercial" /><br /><br />
+        <input type="submit" value="Editar" />
+      </form>
+
+    </div>
+    <div id="divCRUDProductos" style="display: none;">
+      <h4>Categoría Seleccionada para crear y borrar:</h4>
+      <select name="categorias"></select>
+      <hr />
+      <form id="frmNuevoProducto" name="frmNuevoProducto">
+        <h4>Crear Producto</h4>
+        <label>
+          <h4>Nombre producto:</h4>
+        </label>
+        <input type="text" id="txtNombreProducto" /><br /><br />
+
+        <h4>Precio Unidad:</h4>
+        </label>
+        <input type="number" step="0.01" id="txtPrecioUnidadProducto" min="0" /><br /><br />
+        <input type="submit" value="Guardar" />
+      </form>
+      <hr />
+      <form id="frmBorrarProducto" name="frmBorrarProducto">
+        <label>
+          <h4>Producto a borrar:</h4>
+        </label>
+        <input type="text" id="txtBorrarProducto" /><br /><br />
+        <input type="submit" value="Borrar" />
+      </form>
+      <hr>
+      <form id="frmEditarProducto">
+        <label>
+          <h4>Producto a editar:</h4>
+        </label>
+        <label for="txtNombreAntiguoProducto">Nombre Actual: </label><input type="text"
+          id="txtNombreAntiguoProducto" /><br /><br />
+        <label for="txtNombreNuevoProducto">Nombre Nuevo: </label><input type="text"
+          id="txtNombreNuevoProducto" /><br /><br />
+        <label for="txtIdCategoriaProductoNuevo">ID Categoría Nuevo: </label><select
+          name="categorias"></select><br /><br />
+        <label for="txtPrecioUnidadProductoNuevo">Precio Unidad Nuevo: </label><input type="number" step="0.1" min="0"
+          id="txtPrecioUnidadProductoNuevo" /><br /><br />
+
+        <input type="submit" value="Editar" />
+      </form>
+
+    </div>
+    <div id="divCRUDClientes" style="display: none;">
+      <h4>Comercial Seleccionado para crear, borrar o editar clientes:</h4>
+      <select name="comerciales"></select>
+      <hr />
+
+      <form id="frmNuevoCliente" name="frmNuevoCliente">
+        <label>
+          <h4>Nuevo cliente:</h4>
+        </label>
+        <input type="text" id="txtNuevoCliente" /><br /><br />
+        <input type="submit" value="Guardar" />
+      </form>
+      <hr />
+      <form id="frmBorrarCliente" name="frmBorrarCliente">
+        <label>
+          <h4>Cliente a borrar:</h4>
+        </label>
+        <input type="text" id="txtBorrarCliente" /><br /><br />
+        <input type="submit" value="Borrar" />
+      </form>
+      <hr>
+      <form id="frmEditarCliente">
+        <label>
+          <h4>Cliente a editar:</h4>
+        </label>
+        <label for="txtNombreAntiguoCliente">Nombre Actual: </label><input type="text"
+          id="txtNombreAntiguoCliente" /><br /><br />
+        <label for="txtNombreNuevoCliente">Nombre Nuevo: </label><input type="text"
+          id="txtNombreNuevoCliente" /><br /><br />
+        <input type="submit" value="Editar" />
+      </form>
+    </div>
+
+
+  </div>
+  <script src="./js/practicaObligatoria.js"></script>
+</body>
+
+</html>
