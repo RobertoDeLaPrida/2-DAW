@@ -1,0 +1,21 @@
+.capa {
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  padding: 5px;
+  float: left;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border: thin blue solid;
+}
+
+.tooltip {
+  border: black thin solid;
+  position: relative;
+  left: 60%;
+  top: -190px;
+  background-color: white;
+}
